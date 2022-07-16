@@ -7,9 +7,14 @@ using namespace std;
 Word::Word(string word)
 {
 	this->word = word;
-	this->lettersGuessed = new bool[word.length()];
+	lettersGuessed = new bool[word.length()];
 
-	//debug show word
+	for (int i = 0; i < word.length(); i++)
+	{
+		lettersGuessed[i] = false;
+	}
+
+	// debug show word
 	cout << "word: " << word << endl;
 }
 

@@ -14,6 +14,7 @@ public:
 	void Loop();
 	string ChooseRandomWord();
 	void DrawHangman(int tries);
+
 private:
 	int tries;
 	Word wordToGuess;

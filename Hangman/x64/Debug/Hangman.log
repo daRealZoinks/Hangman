@@ -1,6 +1,2 @@
 ﻿  Game.cpp
-  Hangman.cpp
-C:\Users\murar\source\Personal\Hangman\Hangman\Hangman.cpp(8,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
-  Word.cpp
-  Generating Code...
   Hangman.vcxproj -> C:\Users\murar\source\Personal\Hangman\x64\Debug\Hangman.exe
