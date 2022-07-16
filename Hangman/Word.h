@@ -10,8 +10,9 @@ public:
 	void Show();
 	bool CheckLetter(char letter);
 	bool Guessed();
+	string GetWord();
 
 private:
 	string word;
-	bool *lettersGuessed;
+	bool* lettersGuessed;
 };

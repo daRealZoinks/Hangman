@@ -13,9 +13,6 @@ Word::Word(string word)
 	{
 		lettersGuessed[i] = false;
 	}
-
-	// debug show word
-	cout << "word: " << word << endl;
 }
 
 void Word::Show()
@@ -24,7 +21,7 @@ void Word::Show()
 	{
 		if (lettersGuessed[i])
 		{
-			cout << word[i] + " ";
+			cout << word[i] << " ";
 		}
 		else
 		{
@@ -59,4 +56,9 @@ bool Word::Guessed()
 		}
 	}
 	return guessed;
+}
+
+string Word::GetWord()
+{
+	return word;
 }

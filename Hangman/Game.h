@@ -14,11 +14,13 @@ public:
 	void Loop();
 	string ChooseRandomWord();
 	void DrawHangman(int tries);
+	void ShowUnusedLetters();
 
 private:
 	int tries;
 	Word wordToGuess;
 	Player player;
 	vector<string> randomWords;
-	string lettersOfTheAlphabet;
+	string unusedLetters;
+	string usedLetters;
 };
