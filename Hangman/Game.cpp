@@ -76,6 +76,9 @@ void Game::Loop()
 		}
 	}
 
+	DrawHangman(tries);
+	cout << endl;
+
 	cout << "You lose!" << endl;
 	cout << "The word was: " << wordToGuess.GetWord() << endl;
 }
@@ -91,69 +94,69 @@ void Game::DrawHangman(int tries)
 {
 	switch (tries)
 	{
-		case 6:
-			cout << "  ______  " << endl;
-			cout << "  |    |  " << endl;
-			cout << "  |       " << endl;
-			cout << "  |       " << endl;
-			cout << "  |       " << endl;
-			cout << "  |       " << endl;
-			cout << "__|__     " << endl;
-			break;
-		case 5:
-			cout << "  ______  " << endl;
-			cout << "  |    |  " << endl;
-			cout << "  |    O  " << endl;
-			cout << "  |       " << endl;
-			cout << "  |       " << endl;
-			cout << "  |       " << endl;
-			cout << "__|__     " << endl;
-			break;
-		case 4:
-			cout << "  ______  " << endl;
-			cout << "  |    |  " << endl;
-			cout << "  |    O  " << endl;
-			cout << "  |    |  " << endl;
-			cout << "  |       " << endl;
-			cout << "  |       " << endl;
-			cout << "__|__     " << endl;
-			break;
-		case 3:
-			cout << "  ______  " << endl;
-			cout << "  |    |  " << endl;
-			cout << "  |    O  " << endl;
-			cout << "  |   /|  " << endl;
-			cout << "  |       " << endl;
-			cout << "  |       " << endl;
-			cout << "__|__     " << endl;
-			break;
-		case 2:
-			cout << "  ______  " << endl;
-			cout << "  |    |  " << endl;
-			cout << "  |    O  " << endl;
-			cout << "  |   /|\\ " << endl;
-			cout << "  |       " << endl;
-			cout << "  |       " << endl;
-			cout << "__|__     " << endl;
-			break;
-		case 1:
-			cout << "  ______  " << endl;
-			cout << "  |    |  " << endl;
-			cout << "  |    O  " << endl;
-			cout << "  |   /|\\ " << endl;
-			cout << "  |   /   " << endl;
-			cout << "  |       " << endl;
-			cout << "__|__     " << endl;
-			break;
-		case 0:
-			cout << "  ______  " << endl;
-			cout << "  |    |  " << endl;
-			cout << "  |    O  " << endl;
-			cout << "  |   /|\\ " << endl;
-			cout << "  |   / \\ " << endl;
-			cout << "  |       " << endl;
-			cout << "__|__     " << endl;
-			break;
+	case 6:
+		cout << "  ______  " << endl;
+		cout << "  |    |  " << endl;
+		cout << "  |       " << endl;
+		cout << "  |       " << endl;
+		cout << "  |       " << endl;
+		cout << "  |       " << endl;
+		cout << "__|__     " << endl;
+		break;
+	case 5:
+		cout << "  ______  " << endl;
+		cout << "  |    |  " << endl;
+		cout << "  |    O  " << endl;
+		cout << "  |       " << endl;
+		cout << "  |       " << endl;
+		cout << "  |       " << endl;
+		cout << "__|__     " << endl;
+		break;
+	case 4:
+		cout << "  ______  " << endl;
+		cout << "  |    |  " << endl;
+		cout << "  |    O  " << endl;
+		cout << "  |    |  " << endl;
+		cout << "  |       " << endl;
+		cout << "  |       " << endl;
+		cout << "__|__     " << endl;
+		break;
+	case 3:
+		cout << "  ______  " << endl;
+		cout << "  |    |  " << endl;
+		cout << "  |    O  " << endl;
+		cout << "  |   /|  " << endl;
+		cout << "  |       " << endl;
+		cout << "  |       " << endl;
+		cout << "__|__     " << endl;
+		break;
+	case 2:
+		cout << "  ______  " << endl;
+		cout << "  |    |  " << endl;
+		cout << "  |    O  " << endl;
+		cout << "  |   /|\\ " << endl;
+		cout << "  |       " << endl;
+		cout << "  |       " << endl;
+		cout << "__|__     " << endl;
+		break;
+	case 1:
+		cout << "  ______  " << endl;
+		cout << "  |    |  " << endl;
+		cout << "  |    O  " << endl;
+		cout << "  |   /|\\ " << endl;
+		cout << "  |   /   " << endl;
+		cout << "  |       " << endl;
+		cout << "__|__     " << endl;
+		break;
+	case 0:
+		cout << "  ______  " << endl;
+		cout << "  |    |  " << endl;
+		cout << "  |    O  " << endl;
+		cout << "  |   /|\\ " << endl;
+		cout << "  |   / \\ " << endl;
+		cout << "  |       " << endl;
+		cout << "__|__     " << endl;
+		break;
 	}
 }
 
